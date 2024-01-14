@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyrgyz Product</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/fancybox.css" />
+
+    <link rel="stylesheet" href="assets/sass/style.css">
+</head>
+
+<body>
+
+    <header class="main_for_header">
+        <div class="container">
+            <nav class="header__block">
+                <div class="image-box">
+                    <div onclick="window.location.href='index.html'" class="header__logo image"
+                        style="background-image: url('assets/icons/logo.svg');"></div>
+                    <!-- <img class="header__logo image" src="assets/icons/logo.svg" alt=""> -->
+                </div>
+                <ul class="header__menu">
+                    <a href="catalog.html" class="header__navigation lang" key="about" id="up">Каталог</a>
+                    <a href="#" class="header__navigation lang" key="goods">О компании</a>
+                    <a href="#" class="header__navigation lang" key="benefits">Сотрудничество</a>
+                    <a href="#" class="header__navigation lang" key="contact">Контакты</a>
+                </ul>
+                <a class="request" href="request.html">
+                    <div class="request__img">
+                        <img src="assets/icons/request.svg" alt="картинка запрос">
+                    </div>
+                    <div class="request__text lang" key="request">
+                        Оставить запрос
+                    </div>
+                </a>
+                <div class="header__lang">
+                    <div class="request__english language box header-item-lang-ru">
+                        <button data-src='assets/icons/logo.svg' alt="ru" id="ru" data-google-lang="ru"
+                            class="language__img language__img_active btnPer translate">RU</button>
+                        <!-- <img data-src='https://cdn3.iconfinder.com/data/icons/food-set-3/91/Food_C246-256.png' src="assets/icons/En.svg" alt="ru" data-google-lang="ru" class="language__img btn">
+                    <img data-src='https://cdn3.iconfinder.com/data/icons/fruits-8/512/apple-256.png' src="assets/icons/En.svg" alt="en" data-google-lang="en" class="language__img btn"> -->
+                    </div>
+                    <div class="request__english language box header-item-lang-en">
+                        <button data-src='https://cdn3.iconfinder.com/data/icons/fruits-8/512/apple-256.png' alt="en"
+                            id="en" data-google-lang="en" class="language__img btnPer translate">EN</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active intro" data-bs-interval="50000">
+                <div class="video">
+                    <video autoplay loop muted playsinline class="video__media">
+                        <source src="assets/img/mainVideo.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="200000">
+                <img src="assets/img/mainImageOne.png" class="d-block w-100" alt="..." loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                    <img src="assets/icons/iconProduct.svg" alt="">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/img/mainImageOne.png" class="d-block w-100" alt="..." loading="lazy">
+                <div class="carousel-caption d-none d-md-block">
+                    <img src="assets/icons/iconProduct.svg" alt="">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                </div>
+            </div>
+        </div>
+        <button id="buttonscroll" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev">
+            <div class="bg">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </div>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button id="buttonscroll" class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+            data-bs-slide="next">
+            <div class="bg">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </div>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section class="company">
+        <div class="container">
+            <div class="title lang" key="company">О компании</div>
+            <div class="company__blocks">
+                <div class="company__block_left">
+                    <div class="company__block_box">
+                        <div class="company__block_line company__block_line_h85"></div>
+                        <div class="company__block_text lang" key="descriptionOfTheCompanyOne">
+                            "С момента своего основания в 2010 году, <span class="company_text">ОсОО «Кыргызцентрпродукт»</span> 
+                            установила себя как ключевого игрока в производстве и экспорте сельскохозяйственной продукции из Кыргызстана. С годовым объемом экспорта более
+                            <span class="company_text">10 000 тонн</span>, включая фасоль, овощи, фрукты и ягоды, мы гордимся нашими инновациями и высокими стандартами качества.
+                        </div>
+                    </div>
+                    <div class="company__block_box">
+                        <div class="company__block_line company__block_line_h95"></div>
+                        <div class="company__block_text lang" key="descriptionOfTheCompanyTwo">
+                            Наши логистические центры оснащены современными системами шоковой заморозки <span class="company_text">IQF</span> 
+                            и сушки, подтвержденными сертификатами <span class="company_text">ISO 22000 </span>и требованиям <span>HACCP</span> . Это позволяет нам удовлетворять международные стандарты и расширять наш рынок, насчитывающий партнеров в России, Европе и других странах. Мы гордимся нашим вкладом в экспорт Кыргызстана, подтвержденным наградой 
+                            <span class="company_text">'Лучший Экспортер 2018 года'</span> и активным участием на международных выставках.
+                        </div>
+                    </div>
+                    <div class="company__block_box">
+                        <div class="company__block_line company__block_line_h30"></div>
+                        <div class="company__block_text lang" key="descriptionOfTheCompanyThree">
+                            Наша миссия - поддерживать долгосрочные партнерские отношения, предлагая экологически чистую и здоровую продукцию."
+                        </div>
+                    </div>
+                </div>
+                <div class="company__block_main">
+                    <div class="company__block_center">
+                        <div class="compnay__box_center">
+                            <img src="assets/img/companyCenter.png" alt="">
+                        </div>
+                    </div>
+                    <div class="company__block_right">
+                        <div class="company__block" key="descriptiCompanyOne">
+                            <img src="assets/img/company_one.png" alt="">
+                        </div>
+                        <div class="company__block" key="descriptiCompanyTwo">
+                            <img src="assets/img/company_two.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main_bg">
+        <section class="products">
+            <div class="container">
+                <div class="title lang" key="products">наша ПРОДУКЦИЯ</div>
+                <div class="subtitle lang" key="productsDescr">Инновации в агропроме: экспорт премиальных сельхозпродуктов.</div>
+                <div class="products__cards">
+                    <div class="products__cards_card">
+                        <img src="assets/icons/product1.png" alt="" class="products__cards_card_img">
+                        <div class="products__cards_card_title lang" key="productsCard">Замороженная <br>продукция</div>
+                        <div class="products__cards_card_arrow">
+                            <div class="image_card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37"
+                                    fill="none">
+                                    <ellipse cx="18.0339" cy="18.0215" rx="18.0215" ry="18.034"
+                                        transform="rotate(90 18.0339 18.0215)" fill="#50AC32" />
+                                    <path
+                                        d="M7.01352 12.4514C7.09538 12.3741 7.19262 12.3127 7.29967 12.2709C7.40673 12.229 7.5215 12.2075 7.63741 12.2075C7.75331 12.2075 7.86808 12.229 7.97514 12.2709C8.08219 12.3127 8.17943 12.3741 8.26129 12.4514L18.2117 21.8285L28.1621 12.4514C28.3276 12.2955 28.552 12.2079 28.786 12.2079C29.02 12.2079 29.2444 12.2955 29.4099 12.4514C29.5753 12.6073 29.6683 12.8188 29.6683 13.0392C29.6683 13.2597 29.5753 13.4712 29.4099 13.6271L18.8356 23.5903C18.7537 23.6676 18.6565 23.729 18.5494 23.7708C18.4424 23.8127 18.3276 23.8342 18.2117 23.8342C18.0958 23.8342 17.981 23.8127 17.874 23.7708C17.7669 23.729 17.6697 23.6676 17.5878 23.5903L7.01352 13.6271C6.93146 13.5499 6.86635 13.4583 6.82193 13.3575C6.77751 13.2566 6.75464 13.1484 6.75464 13.0392C6.75464 12.93 6.77751 12.8219 6.82193 12.721C6.86635 12.6202 6.93146 12.5285 7.01352 12.4514Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="products__cards_card_subtitles">
+                            <div class="products__cards_card_subtitle lang" key="fruit">Фрукты</div>
+                            <div class="products__cards_card_subtitle lang" key="vegetables">овощи</div>
+                            <div class="products__cards_card_subtitle lang" key="berries">ягоды</div>
+                        </div>
+                    </div>
+                    <div class="products__cards_card">
+                        <img src="assets/icons/product2.png" alt="" class="products__cards_card_img">
+                        <div class="products__cards_card_title lang" key="driedProducts">сушенная продукция</div>
+                        <div class="products__cards_card_arrow">
+                            <div class="image_card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37"
+                                    fill="none">
+                                    <ellipse cx="18.0339" cy="18.0215" rx="18.0215" ry="18.034"
+                                        transform="rotate(90 18.0339 18.0215)" fill="#50AC32" />
+                                    <path
+                                        d="M7.01352 12.4514C7.09538 12.3741 7.19262 12.3127 7.29967 12.2709C7.40673 12.229 7.5215 12.2075 7.63741 12.2075C7.75331 12.2075 7.86808 12.229 7.97514 12.2709C8.08219 12.3127 8.17943 12.3741 8.26129 12.4514L18.2117 21.8285L28.1621 12.4514C28.3276 12.2955 28.552 12.2079 28.786 12.2079C29.02 12.2079 29.2444 12.2955 29.4099 12.4514C29.5753 12.6073 29.6683 12.8188 29.6683 13.0392C29.6683 13.2597 29.5753 13.4712 29.4099 13.6271L18.8356 23.5903C18.7537 23.6676 18.6565 23.729 18.5494 23.7708C18.4424 23.8127 18.3276 23.8342 18.2117 23.8342C18.0958 23.8342 17.981 23.8127 17.874 23.7708C17.7669 23.729 17.6697 23.6676 17.5878 23.5903L7.01352 13.6271C6.93146 13.5499 6.86635 13.4583 6.82193 13.3575C6.77751 13.2566 6.75464 13.1484 6.75464 13.0392C6.75464 12.93 6.77751 12.8219 6.82193 12.721C6.86635 12.6202 6.93146 12.5285 7.01352 12.4514Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="products__cards_card_subtitles">
+                            <div class="products__cards_card_subtitle lang" key="fruit">Фрукты</div>
+                            <div class="products__cards_card_subtitle lang" key="vegetables">овощи</div>
+                            <div class="products__cards_card_subtitle lang" key="berries">ягоды</div>
+                        </div>
+                    </div>
+                    <div class="products__cards_card">
+                        <img src="assets/icons/product3.png" alt="" class="products__cards_card_img">
+                        <div class="products__cards_card_title lang" key="pea">бобы</div>
+                        <div class="products__cards_card_arrow">
+                            <div class="image_card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37"
+                                    fill="none">
+                                    <ellipse cx="18.0339" cy="18.0215" rx="18.0215" ry="18.034"
+                                        transform="rotate(90 18.0339 18.0215)" fill="#50AC32" />
+                                    <path
+                                        d="M7.01352 12.4514C7.09538 12.3741 7.19262 12.3127 7.29967 12.2709C7.40673 12.229 7.5215 12.2075 7.63741 12.2075C7.75331 12.2075 7.86808 12.229 7.97514 12.2709C8.08219 12.3127 8.17943 12.3741 8.26129 12.4514L18.2117 21.8285L28.1621 12.4514C28.3276 12.2955 28.552 12.2079 28.786 12.2079C29.02 12.2079 29.2444 12.2955 29.4099 12.4514C29.5753 12.6073 29.6683 12.8188 29.6683 13.0392C29.6683 13.2597 29.5753 13.4712 29.4099 13.6271L18.8356 23.5903C18.7537 23.6676 18.6565 23.729 18.5494 23.7708C18.4424 23.8127 18.3276 23.8342 18.2117 23.8342C18.0958 23.8342 17.981 23.8127 17.874 23.7708C17.7669 23.729 17.6697 23.6676 17.5878 23.5903L7.01352 13.6271C6.93146 13.5499 6.86635 13.4583 6.82193 13.3575C6.77751 13.2566 6.75464 13.1484 6.75464 13.0392C6.75464 12.93 6.77751 12.8219 6.82193 12.721C6.86635 12.6202 6.93146 12.5285 7.01352 12.4514Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="products__cards_card_subtitles">
+                            <div class="products__cards_card_subtitle lang" key="greenBean">фасоль</div>
+                        </div>
+                    </div>
+                    <div class="products__cards_card">
+                        <img src="assets/icons/product4.png" alt="" class="products__cards_card_img">
+                        <div class="products__cards_card_title lang" key="freshProduce">свежая продукция</div>
+                        <div class="products__cards_card_arrow">
+                            <div class="image_card">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37"
+                                    fill="none">
+                                    <ellipse cx="18.0339" cy="18.0215" rx="18.0215" ry="18.034"
+                                        transform="rotate(90 18.0339 18.0215)" fill="#50AC32" />
+                                    <path
+                                        d="M7.01352 12.4514C7.09538 12.3741 7.19262 12.3127 7.29967 12.2709C7.40673 12.229 7.5215 12.2075 7.63741 12.2075C7.75331 12.2075 7.86808 12.229 7.97514 12.2709C8.08219 12.3127 8.17943 12.3741 8.26129 12.4514L18.2117 21.8285L28.1621 12.4514C28.3276 12.2955 28.552 12.2079 28.786 12.2079C29.02 12.2079 29.2444 12.2955 29.4099 12.4514C29.5753 12.6073 29.6683 12.8188 29.6683 13.0392C29.6683 13.2597 29.5753 13.4712 29.4099 13.6271L18.8356 23.5903C18.7537 23.6676 18.6565 23.729 18.5494 23.7708C18.4424 23.8127 18.3276 23.8342 18.2117 23.8342C18.0958 23.8342 17.981 23.8127 17.874 23.7708C17.7669 23.729 17.6697 23.6676 17.5878 23.5903L7.01352 13.6271C6.93146 13.5499 6.86635 13.4583 6.82193 13.3575C6.77751 13.2566 6.75464 13.1484 6.75464 13.0392C6.75464 12.93 6.77751 12.8219 6.82193 12.721C6.86635 12.6202 6.93146 12.5285 7.01352 12.4514Z"
+                                        fill="white" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="products__cards_card_subtitles">
+                            <div class="products__cards_card_subtitle lang" key="fruit">Фрукты</div>
+                            <div class="products__cards_card_subtitle lang" key="vegetables">овощи</div>
+                            <div class="products__cards_card_subtitle lang" key="berries">ягоды</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="partners">
+            <div class="container">
+                <div class="title lang" key="ourPartners">Наши партнеры</div>
+                <div class="subtitle lang" key="ourPartnersSubtitle">Сотрудничество, создающее ценность: наши партнеры по всему миру.</div>
+                <div class="partners__sliders">
+                    <div class="partners__slider">
+                        <img src="assets/img/company/company1.png" alt="">
+                    </div>
+                    <div class="partners__slider">
+                        <img src="assets/img/company/company2.png" alt="">
+                    </div>
+                    <div class="partners__slider">
+                        <img src="assets/img/company/company3.png" alt="">
+                    </div>
+                    <div class="partners__slider">
+                        <img src="assets/img/company/ik.jpg" alt="">
+                    </div>
+                    <div class="partners__slider">
+                        <img src="assets/img/company/jag.jpg" alt="">
+                    </div>
+                    <div class="partners__slider">
+                        <img src="assets/img/company/mc.jpg" alt="">
+                    </div>
+                    <div class="partners__slider">
+                        <img src="assets/img/company/slack.jpg" alt="">
+                    </div>
+                    <div class="partners__slider">
+                        <img src="assets/img/company/tesla.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="container">
+                <div class="title gallery__title lang" key="gallery">НОвости компании</div>
+                <div class="row mb-3 mt-5">
+                    <div class="gallery__box gallery__box_one col me-4">
+                        <a data-fancybox="gallery1" href="https://lipsum.app/id/60/1600x1200">
+                            <img class="gallery__img" src="https://lipsum.app/id/60/200x150" width="200" height="150" alt="">
+                        </a>
+
+                        <div style="display:none">
+                            <a data-fancybox="gallery1" href="assets/img/company/fb.jpg">
+                                <img src="assets/img/company/fb.jpg">
+                            </a>
+                            <a data-fancybox="gallery1" href="https://lipsum.app/id/62/1600x1200">
+                                <img src="https://lipsum.app/id/62/120x80">
+                            </a>
+                            <a data-fancybox="gallery1" href="https://lipsum.app/id/63/1600x1200">
+                                <img src="https://lipsum.app/id/63/120x80">
+                            </a>
+                        </div>
+                        <div class="gallery__text lang" key="galleryText">Лучший экспортер Кыргызстана 2018</div>
+                    </div>
+                    <div class="gallery__box gallery__box_two col me-4">
+                        <a data-fancybox="gallery2" href="assets/img/company/apple.jpg">
+                            <img class="gallery__img" src="assets/img/company/apple.jpg" width="200" height="150" alt="">
+                        </a>
+
+                        <div style="display:none">
+                            <a data-fancybox="gallery2" href="assets/img/company/fb.jpg">
+                                <img src="assets/img/company/fb.jpg">
+                            </a>
+                            <a data-fancybox="gallery2" href="assets/img/company/slack.jpg">
+                                <img src="assets/img/company/fb.jpg">
+                            </a>
+                            <a data-fancybox="gallery2" href="assets/img/company/ik.jpg">
+                                <img src="assets/img/company/tesla.jpg">
+                            </a>
+                        </div>
+                        <div class="gallery__text lang" key="galleryText">Наша собсвтенная марка VITA MIKS</div>
+                    </div>
+                    <div class="gallery__box gallery__box_three col">
+                        <a data-fancybox="gallery3" href="assets/img/company/tesla.jpg">
+                            <img class="gallery__img" src="assets/img/company/tesla.jpg" width="200" height="150" alt="">
+                        </a>
+
+                        <div style="display:none">
+                            <a data-fancybox="gallery3" href="assets/img/company/mc.jpg">
+                                <img src="assets/img/company/fb.jpg">
+                            </a>
+                            <a data-fancybox="gallery3" href="assets/img/company/fb.jpg">
+                                <img src="assets/img/company/fb.jpg">
+                            </a>
+                            <a data-fancybox="gallery3" href="assets/img/company/fb.jpg">
+                                <img src="assets/img/company/tesla.jpg">
+                            </a>
+                        </div>
+                        <div class="gallery__text lang" key="galleryText">открытие завода по заморозке</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="container">
+                <div class="title lang" key="geographyOfSupplies">География Поставок</div>
+                <div class="subtitle lang" key="geographyOfSuppliesSubtitle">От Кыргызстана до международных рынков: наша продукция во всем мире.</div>
+                <div class="map__blocks">
+                    <div class="map__left_image"></div>
+                    <div class="map__right_text">
+                        <div class="map__flex">
+                            <img src="assets/icons/textImg.svg" alt="" class="map__image">
+                            <div class="map__text lang" key="geographyOfSupplies1">ЕАЭС</div>
+                        </div>
+                        <div class="map__flex">
+                            <img src="assets/icons/textImg.svg" alt="" class="map__image">
+                            <div class="map__text lang" key="geographyOfSupplies2">Сербия</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cooperation">
+            <div class="container">
+                <div class="cooperation__blocks">
+                    <div class="title cooperation__title lang" key="cooperation">Сотрудничество</div>
+                    <div class="cooperation__box">
+                        <div class="cooperation__box_block">
+                            <div class="cooperation__box_header">
+                                <img class="cooperation__bot_img" src="assets/icons/cooperationOne.svg" alt="">
+                                <div class="cooperation__box_title lang" key="cooperationTitleOne">Фермерам и Производителям</div>
+                            </div>
+                            <div class="cooperation__text lang" key="cooperation1">
+                                "В 'Кыргызцентрпродукт' мы ценим сотрудничество с местными фермерами и производителями. Мы предлагаем вам возможность стать частью нашей цепочки поставок, гарантируя справедливые условия сотрудничества и стабильный спрос. Наше партнерство основано на принципах устойчивости и взаимной выгоды, стремясь к обеспечению качественной сельскохозяйственной продукции для местных и международных рынков."
+                            </div>
+                        </div>
+                        <div class="cooperation__box_block">
+                            <div class="cooperation__box_header">
+                                <img class="cooperation__bot_img" src="assets/icons/cooperationTwo.svg" alt="">
+                                <div class="cooperation__box_title lang" key="cooperationTitleTwo">Инвесторам и Партнерам по Развитию</div>
+                            </div>
+                            <div class="cooperation__text lang" key="cooperation2">
+                                "Мы открыты для сотрудничества с инвесторами и партнерами, заинтересованными в развитии агропромышленного сектора Кыргызстана. 'Кыргызцентрпродукт' предлагает инвесторам присоединиться к нашим масштабным проектам в сфере производства, обработки и экспорта сельскохозяйственной продукции. Ваш вклад будет способствовать инновациям, созданию рабочих мест и улучшению качества продукции на международном рынке."
+                            </div>
+                        </div>
+                        <div class="cooperation__box_block">
+                            <div class="cooperation__box_header">
+                                <img class="cooperation__bot_img" src="assets/icons/cooperationThree.svg" alt="">
+                                <div class="cooperation__box_title lang" key="cooperationTitleThree">Дистрибьюторам и Розничным Сетям</div>
+                            </div>
+                            <div class="cooperation__text lang" key="cooperation3">
+                                "Мы приглашаем дистрибьюторов и розничные сети к сотрудничеству. 'Кыргызцентрпродукт' предлагает широкий ассортимент качественных сельскохозяйственных продуктов, подходящих для разнообразных рынков. Мы обеспечиваем надежные поставки, высокие стандарты качества и гибкие условия сотрудничества. Станьте нашим партнером и расширьте свой ассортимент уникальной и востребованной продукцией."
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <div class="container">
+                <div class="title lang" key="contacts">Контакты</div>
+                <div class="contacts__boxs">
+                    <div class="contacts__left">
+                        <div class="contacts__left_title lang" key="contacts1">наши адреса и контакты</div>
+
+                        <div class="contacts__left_lineText lang" key="contacts2">главный офис</div>
+                        <div class="contacts__left_adress">
+                            <img src="assets/icons/iconsAdress.svg" alt="" class="contacts__left_image">
+                            <div class="contacts__left_text lang" key="contacts3">г. Бишкек Бизнес центр “Аврора”</div>
+                        </div>
+
+                        <div class="contacts__left_lineText lang" key="freezing">заморозка</div>
+                        <div class="contacts__left_adress">
+                            <img src="assets/icons/iconsAdress.svg" alt="" class="contacts__left_image">
+                            <div class="contacts__left_text lang" key="freezing1">Талас с. Кызыл-Адыр ул. Ленина 148
+                            </div>
+                        </div>
+
+                        <div class="contacts__left_lineText lang" key="drying">сушка</div>
+                        <div class="contacts__left_adress">
+                            <img src="assets/icons/iconsAdress.svg" alt="" class="contacts__left_image">
+                            <div class="contacts__left_text lang" key="drying1">г. Бишкек Бизнес центр “Аврора”</div>
+                        </div>
+                        <div class="contacts__left_social">
+                            <a href="">
+                                <img class="contacts__left_socialOne" src="assets/icons/telegram.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img class="contacts__left_socialTwo" src="assets/icons/whatsapp.svg" alt="">
+                            </a>
+                            <a href="">
+                                <img class="contacts__left_socialThree" src="assets/icons/tel.svg" alt="">
+                            </a>
+                        </div>
+                        <!-- <div class="contacts__left_number"></div> -->
+                        <a class="contacts__left_number" href="tel:+996776999977"
+                            class="header__phone">+(996)776-999-977</a>
+                        <div class="contacts__left_gmail">
+                            <img src="assets/icons/gmail.svg" alt="" class="contacts__left_gmailImg">
+                            <a href="">
+                                <div class="contacts__left_gmailText">sales@product.com</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contacts__right">
+                        <iframe style="border-radius: 20px;"
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A21168a623f7a8a7c48ad8c1e7ca4c65382076308658926ff83fd0b5d70aa8065&amp;source=constructor"
+                            width="665" height="700" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__boxs">
+                <div class="footer__box">
+                    <div class="footer__contact lang" key="contacts">Контакты</div>
+                    <div class="footer__tel">
+                        <a class="footer__phone" href="+996776999977">+(996)776-999-977</a>
+                        <a href=""><img src="assets/icons/telegram.svg" alt="telegram" class="footer__social"
+                                loading="lazy"></a>
+                        <a href=""><img src="assets/icons/whatsapp.svg" alt="whatsapp" class="footer__social"
+                                loading="lazy"></a>
+                    </div>
+                    <div class="footer__email">sales@product.com</div>
+                    <div class="footer__text lang" key="contactsAdress1">Кыргызская Республика</div>
+                    <div class="footer__text lang" key="contactsAdress2">г. Бишкек</div>
+                    <div class="footer__text lang" key="contactsAdress3">г. Жалал-Абад</div>
+                    <div class="footer__text lang" key="contactsAdress4">г. Ош</div>
+                </div>
+                <div class="footer__line"></div>
+                <div class="footer__box">
+                    <div class="footer__title lang" key="questions">Остались вопросы?</div>
+                    <div class="footer__subtitle lang" key="questions1">Не нашли что искали? Свяжитесь с нами и наши
+                        менеджеры ответят на любой ваш вопрос</div>
+                    <div class="footer__prava lang" key="questions2">© productkg.com Все права защищены</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<!-- <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+</script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/l10n/de.umd.js"></script> -->
+<script src="assets/js/fancybox.umd.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script>
+    Fancybox.bind('[data-fancybox]', {
+        //
+    });
+</script>
+</body>
+
+</html>

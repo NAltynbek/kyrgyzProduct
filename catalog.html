@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyrgyz Product</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <link rel="stylesheet" href="assets/sass/style.css">
+</head>
+
+<body>
+
+    <header class="main_for_header">
+        <div class="container">
+            <nav class="header__block">
+                <div class="image-box">
+                    <div onclick="window.location.href='index.html'" class="header__logo image"
+                        style="background-image: url('assets/icons/logo.svg');"></div>
+                    <!-- <img class="header__logo image" src="assets/icons/logo.svg" alt=""> -->
+                </div>
+                <ul class="header__menu">
+                    <a href="catalog.html" class="header__navigation lang" key="about" id="up">Каталог</a>
+                    <a href="#" class="header__navigation lang" key="goods">О компании</a>
+                    <a href="#" class="header__navigation lang" key="benefits">Сотрудничество</a>
+                    <a href="#" class="header__navigation lang" key="contact">Контакты</a>
+                </ul>
+                <a class="request" href="request.html">
+                    <div class="request__img">
+                        <img src="assets/icons/request.svg" alt="картинка запрос">
+                    </div>
+                    <div class="request__text lang" key="request">
+                        Оставить запрос
+                    </div>
+                </a>
+                <div class="header__lang">
+                    <div class="request__english language box header-item-lang-ru">
+                        <button data-src='assets/icons/logo.svg' alt="ru" id="ru" data-google-lang="ru"
+                            class="language__img language__img_active btnPer translate">RU</button>
+                        <!-- <img data-src='https://cdn3.iconfinder.com/data/icons/food-set-3/91/Food_C246-256.png' src="assets/icons/En.svg" alt="ru" data-google-lang="ru" class="language__img btn">
+                    <img data-src='https://cdn3.iconfinder.com/data/icons/fruits-8/512/apple-256.png' src="assets/icons/En.svg" alt="en" data-google-lang="en" class="language__img btn"> -->
+                    </div>
+                    <div class="request__english language box header-item-lang-en">
+                        <button data-src='https://cdn3.iconfinder.com/data/icons/fruits-8/512/apple-256.png' alt="en"
+                            id="en" data-google-lang="en"
+                            class="language__img btnPer translate language__img_active">EN</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main_active">
+        <section class="clickIcon">
+            <div class="container">
+                <div class="clickIcon__block">
+                    <div class="clickIcon__text lang" key="clickIconText">Нажмите на иконку продукции для перехода</div>
+                    <ul class="clickIcon__boxs">
+                        <li class="clickIcon__box">
+                            <img src="assets/icons/product1.png" alt="" class="clickIcon__box_img">
+                            <div class="clickIcon__box_lines">
+                                <div class="clickIcon__box_line clickIcon__box_line_active"></div>
+                            </div>
+                        </li>
+                        <li class="clickIcon__box">
+                            <img src="assets/icons/product2.png" alt="" class="clickIcon__box_img">
+                            <div class="clickIcon__box_lines">
+                                <div class="clickIcon__box_line"></div>
+                            </div>
+                        </li>
+                        <li class="clickIcon__box">
+                            <img src="assets/icons/product3.png" alt="" class="clickIcon__box_img">
+                            <div class="clickIcon__box_lines">
+                                <div class="clickIcon__box_line"></div>
+                            </div>
+                        </li>
+                        <li class="clickIcon__box">
+                            <img src="assets/icons/product4.png" alt="" class="clickIcon__box_img">
+                            <div class="clickIcon__box_lines">
+                                <div class="clickIcon__box_line"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="clickBtn">
+            <div class="container">
+                <ul class="clickBtn__block clickBtn__block_active">
+                    <li class="clickBtn__box clickBtn__box_active" id="btn1">
+                        <div class="clickBtn__box_text lang" key="clickBtnFruits">фрукты</div>
+                    </li>
+                    <li class="clickBtn__box" id="btn2">
+                        <div class="clickBtn__box_text lang" key="clickBtnVegetables">овощи</div>
+                    </li>
+                    <li class="clickBtn__box" id="btn3">
+                        <div class="clickBtn__box_text lang" key="clickBtnBerries">ягоды</div>
+                    </li>
+                </ul>
+
+                <ul class="clickBtn__block">
+                    <li class="clickBtn__box" id="btn4">
+                        <div class="clickBtn__box_text lang" key="clickBtnFruits">фрукты</div>
+                    </li>
+                    <li class="clickBtn__box" id="btn5">
+                        <div class="clickBtn__box_text lang" key="clickBtnBerries">ягоды</div>
+                    </li>
+                </ul>
+
+                <ul class="clickBtn__block">
+                    <li class="clickBtn__box" id="btn6">
+                        <div class="clickBtn__box_text lang" key="clickBtnBean">фасоль</div>
+                    </li>
+                    <li class="clickBtn__box" id="btn7">
+                        <div class="clickBtn__box_text lang" key="clickBtnBean">фасоль</div>
+                    </li>
+                </ul>
+
+                <ul class="clickBtn__block">
+                    <li class="clickBtn__box" id="btn8">
+                        <div class="clickBtn__box_text lang" key="clickBtnVegetables">овощи</div>
+                    </li>
+                    <li class="clickBtn__box" id="btn9">
+                        <div class="clickBtn__box_text lang" key="clickBtnBerries">ягоды</div>
+                    </li>
+                </ul>
+
+                <div class="catalog__content" id="card1" style="display: flex;">
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg1.png" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogCherry">Вишня</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg1.png" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogCherry">Вишня</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg1.png" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogCherry">Вишня</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg1.png" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogCherry">Вишня</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg1.png" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogCherry">Вишня</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg1.png" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogCherry">Вишня</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg1.png" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogCherry">Вишня</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg1.png" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogCherry">Вишня</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg1.png" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogCherry">Вишня</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg1.png" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogCherry">Вишня</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg1.png" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogCherry">Вишня</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg1.png" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogCherry">Вишня</div>
+                    </div>
+                </div>
+
+                <div class="catalog__content" id="card2" style="display: none;">
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg3.jpg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogVegetables">овощи</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg3.jpg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogVegetables">овощи</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg3.jpg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogVegetables">овощи</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg3.jpg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogVegetables">овощи</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg3.jpg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogVegetables">овощи</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg3.jpg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogVegetables">овощи</div>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg3.jpg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogVegetables">овощи</div>
+                    </div>
+                </div>
+
+                <div class="catalog__content" id="card3" style="display: none;">
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogBerries">ягоды</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogBerries">ягоды</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogBerries">ягоды</div>
+                    </div>
+                </div>
+
+                <div class="catalog__content" id="card4" style="display: none;">
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="gg">gg</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="gg">gg</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="gg">gg</div>
+                    </div>
+                </div>
+
+                <div class="catalog__content" id="card5" style="display: none;">
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="dd">dd</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="dd">dd</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="dd">dd</div>
+                    </div>
+                </div>
+
+                <div class="catalog__content" id="card6" style="display: none;">
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogBean">фасоль</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogBean">фасоль</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogBean">фасоль</div>
+                    </div>
+                </div>
+
+                <div class="catalog__content" id="card7" style="display: none;">
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogBean">фасоль</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogBean">фасоль</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogBean">фасоль</div>
+                    </div>
+                </div>
+
+                <div class="catalog__content" id="card8" style="display: none;">
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogVegetables">овощи</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogVegetables">овощи</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogVegetables">овощи</div>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogVegetables">овощи</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogVegetables">овощи</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogVegetables">овощи</div>
+                    </div>
+                </div>
+
+                <div class="catalog__content" id="card9" style="display: none;">
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogBerries">ягоды</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogBerries">ягоды</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogBerries">ягоды</div>
+                    </div>
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogBerries">ягоды</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogBerries">ягоды</div>
+                    </div>
+
+                    <div class="catalog-item">
+                        <img src="assets/img/catalog/catalogImg4.jpeg" alt="" class="catalog-item__img">
+                        <div class="catalog-item__text lang" key="catalogBerries">ягоды</div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+    </div>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+</script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script> -->
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+
+</html>

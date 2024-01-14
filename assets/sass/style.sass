@@ -1,0 +1,877 @@
+$main-color: #50AC32
+
+*,html,body 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    font-family: 'Inter', sans-serif
+    font-family: 'Montserrat', sans-serif
+
+a,
+a:hover,
+a:active,
+a:focus,
+a:visited
+    color: $main-color
+    text-decoration: none
+.h-vh 
+    height: 100dvh
+
+.container, .container_request
+    width: 100% !important
+    max-width: 1300px !important
+    margin: 0 auto !important
+
+ul 
+    list-style: none
+
+.main_for_header 
+    width: 100%
+    margin: 0 auto
+    display: flex
+    align-items: center
+    position: fixed
+    z-index: 1000
+    height: 90px
+    background-color: rgba(255, 255, 255, 0.7)
+
+.header__block
+    display: flex
+    justify-content: space-around
+    align-items: center
+    padding-top: 5px
+
+.header__navigation
+    color: #20602F
+    font-family: 'Inter', sans-serif
+    font-size: 18px
+    font-weight: 400
+    margin-right: 35px
+
+.request 
+    display: flex
+    align-items: center
+    justify-content: space-around
+    width: 180px
+    height: 65px
+    border-radius: 17px
+    background: $main-color
+    &__text
+        width: 100px
+        color: #FFF
+        text-align: center
+        font-family: 'Montserrat', sans-serif
+        font-size: 15px
+        font-weight: 600
+        line-height: 17.129px /* 100.761% */
+        letter-spacing: 0.364px
+    &__english
+        outline: none !important
+        box-shadow: none !important
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 36px
+        height: 36px
+        background-color: $main-color
+        border-radius: 50%
+.carousel-item
+    height: 100vh
+    background: #000
+.carousel-item img
+    opacity: 0.6
+.bg
+    display: flex
+    width: 61px
+    height: 61px
+    background-color: #fff
+    border-radius: 50%
+    align-items: center
+    justify-content: center
+.carousel-caption
+    bottom: 6.25rem
+.carousel-caption img
+    opacity: 5
+
+.title 
+    padding-top: 50px
+    color: #000
+    text-align: center
+    font-family: 'Montserrat', sans-serif
+    font-size: 35px
+    font-weight: 600
+    line-height: 50px /* 142.857% */
+    letter-spacing: 2px
+    text-transform: uppercase
+.subtitle
+    margin: 0 auto
+    width: 540px
+    color: #000
+    text-align: center
+    font-family: 'Montserrat', sans-serif
+    font-size: 15px
+    font-weight: 500
+    line-height: 19px /* 126.667% */
+    letter-spacing: 0.445px
+    text-transform: uppercase
+    padding-top: 10px
+.company_text
+    color: #479c2d
+    font-family: 'Montserrat', sans-serif
+    font-size: 12px
+    font-weight: 500
+.company
+    background: #EEE        
+    &__blocks
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 100px 0 130px 0
+    &__block_left
+        width: 530px
+        display: flex
+        flex-direction: column
+    &__block_right
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__block
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 280px
+        height: 148px
+        &_main
+            display: flex
+        &_box
+            display: flex
+            align-items: center
+            margin-bottom: 20px
+        &_text
+            color: #000
+            font-family: 'Montserrat', sans-serif
+            font-size: 12px
+            font-weight: 500
+            line-height: 17.717px
+            font-variant: small-caps
+        &_line
+            width: 10px !important
+            height: 55px
+            background-color: $main-color
+            margin-right: 10px
+            &_h85
+                height: 60px
+                width: 7px !important
+            &_h95
+                height: 95px
+                width: 8px !important
+            &_h30
+                height: 25px
+                width: 2px !important
+
+.image_card svg
+    display: block 
+    transition: transform .3s all
+    transform: rotate(-90deg) 
+    margin-bottom: 20px
+.active svg
+  transform: rotate(0deg)
+
+.products
+    &__cards
+        display: flex
+        justify-content: space-between
+        margin: 80px 0 80px 0
+        &_card:hover > .products__cards_card_arrow
+            opacity: 1 
+            visibility: visible
+            cursor: pointer
+            // transform: translateY(-100%)
+            transition: all 0.7s linear
+            // display: block
+            // animation: shows 1s
+        .products__cards_card_subtitles_active
+            display: block
+        &_card_active 
+            height: 470px !important
+            box-shadow: 0px 0px 15px 0px #50ac32 !important
+            transition: all 1s ease-in-out
+        &_card
+            display: flex
+            align-items: center
+            flex-direction: column
+            width: 290px
+            height: 333px
+            border-radius: 20px
+            background: #FFF
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25)
+            transition: all 0.5s linear
+            &_title
+                width: 140px
+                height: 60px
+                text-align: center
+            &_arrow
+                transition: transform 2s
+                opacity: 0
+                visibility: hidden
+                margin-top: 20px
+                // display: none
+                // position: relative
+                // top: 30px
+            &_subtitles
+                display: none
+                color: #000
+                text-align: center
+                font-family: 'Montserrat', sans-serif
+                font-size: 15px
+                font-weight: 400
+                text-transform: uppercase
+            &_subtitle
+                padding-top: 5px
+                height: 30px
+            &_subtitle:hover
+                display: block
+                width: 100px
+                height: 30px
+                cursor: pointer
+                border-radius: 8px
+                background: $main-color
+                color: #fff
+            &_img
+                margin: 40px 0
+
+// @keyframes shows 
+//     from 
+//         opacity: 0
+//     to 
+//         opacity: 1
+
+.partners
+    &__sliders
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin: 60px 0 70px 0
+    &__slider img
+        width: 320px !important
+        height: 230px
+        border-radius: 20px
+
+.slick-arrow
+    border: none
+    height: 40px
+    border-radius: 50%
+.slick-prev
+    margin-right: 50px
+
+.gallery
+    background: url('../icons/gallery.png') center center/cover no-repeat
+    background-color: $main-color
+    padding: 20px 0 80px 0
+    &__title
+        color: #fff
+    &__image
+        z-index: -10
+    &__box img
+        width: 360px
+        height: 230px
+        background-color: green
+        border-radius: 20px
+        z-index: -1
+        // &_one
+        //     background: url('../img/slider.png') center center/cover no-repeat
+        // &_two
+        //     background: url('../img/slider.png') center center/cover no-repeat
+        // &_three
+        //     background: url('../img/slider.png') center center/cover no-repeat
+    &__img
+        box-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.25)
+    &__text
+        width: 90%
+        margin-top: 35px
+        color: #FFF
+        text-align: center
+        font-family: 'Montserrat', sans-serif
+        font-size: 19px
+        font-weight: 600
+        line-height: 20px /* 105.263% */
+        letter-spacing: 1px
+        text-transform: uppercase
+
+.map
+    &__left_image
+        width: 775px
+        height: 440px
+        background: url('../img/map.png') center center/cover no-repeat
+    &__blocks
+        display: flex
+        align-items: center
+        margin: 50px 0 80px 0
+    &__flex
+        width: 240px
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        margin-left: 60px
+    &__text
+        color: #000
+        font-family: 'Montserrat', sans-serif
+        font-size: 40px
+        font-weight: 400
+        line-height: 73.096px /* 182.741% */
+        letter-spacing: 1.381px
+        text-align: left
+        padding-left: 40px
+.cooperation__box_block
+    display: flex
+    flex-direction: column
+    align-items: center
+    width: 380px
+    border-radius: 25px
+    background: url('../img/cooperation.png') center center/cover no-repeat
+.cooperation
+    &__blocks
+        margin-bottom: 20px
+    &__title
+        padding-top: 60px
+    &__box
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin: 60px 0
+        &_header
+            display: flex
+            align-items: center
+            justify-content: space-around
+            border-radius: 25px 25px 0 0
+            width: 100%
+            height: 115px
+            background: #FFDC30
+        &_title
+            width: 270px
+            color: #479C2D
+            font-family: 'Montserrat', sans-serif
+            font-size: 18px
+            font-weight: 800
+            line-height: 20px /* 111.111% */
+            letter-spacing: 1px
+            text-transform: uppercase
+    &__text
+        display: flex
+        align-items: center
+        height: 300px
+        color: #FFF
+        text-align: center
+        font-family: 'Montserrat', sans-serif
+        font-size: 15px
+        font-weight: 500
+        line-height: 23px /* 153.333% */
+        font-variant: small-caps
+        margin: 0 30px
+.contacts
+    &__boxs
+        display: flex
+        justify-content: space-between
+        margin: 100px 0
+    &__right
+        border-radius: 20px
+        box-shadow: 0px 0px 15px 0px #4FAD32
+    &__left
+        width: 340px
+        height: 700px
+        border-radius: 20px
+        box-shadow: 0px 0px 15px 0px #4FAD32
+        &_title
+            padding: 33px 0
+            color: #000
+            text-align: center
+            font-family: 'Montserrat', sans-serif
+            font-size: 17px
+            font-weight: 700
+            line-height: 28.5px /* 167.647% */
+            letter-spacing: 1px
+            text-transform: uppercase
+        &_lineText
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 100%
+            height: 45px
+            background-color: $main-color
+            color: #FFF
+            text-align: center
+            font-family: 'Montserrat', sans-serif
+            font-size: 15px
+            font-weight: 600
+            line-height: 23px /* 153.333% */
+            letter-spacing: 1px
+            text-transform: uppercase
+        &_adress
+            display: flex
+            align-items: center
+            padding: 15px 0
+        &_image
+            padding: 0 15px 0 25px
+        &_text
+            color: #000
+            font-family: 'Montserrat', sans-serif
+            font-size: 16px
+            font-weight: 500
+            line-height: 20px /* 125% */
+            letter-spacing: 1px
+        &_social
+            display: flex
+            padding-bottom: 20px
+        &_socialOne
+            padding: 0 10px 0 25px
+        &_socialTwo
+            padding-right: 10px
+        &_number
+            color: #000
+            font-family: 'Montserrat', sans-serif
+            font-size: 18px
+            font-weight: 500
+            line-height: 31.98px /* 177.669% */
+            padding-left: 25px
+        &_gmail
+            padding: 15px 0 30px 25px
+            display: flex
+        &_gmailText
+            color: #000
+            font-family: 'Montserrat', sans-serif
+            font-size: 18px
+            font-weight: 500
+            line-height: 34.112px /* 189.513% */
+            padding-left: 10px
+.footer
+    background: #293041
+.footer__boxs
+    display: flex
+    justify-content: space-around 
+    align-items: center 
+    padding: 55px 0 30px 0
+.footer__box 
+    width: 500px 
+.footer__contact 
+    color: #ffffff
+    font-family: 'Montserrat', sans-serif 
+    font-size: 24px 
+    font-weight: 500 
+    line-height: 36px 
+    padding-bottom: 17px 
+    
+.footer__phone 
+    color: #ffffff 
+    font-family: 'Montserrat', sans-serif 
+    font-size: 15px 
+    font-weight: 500 
+    line-height: 22.5px 
+.footer__phone:hover
+    color: #fff  
+.footer__social 
+    width: 35px
+    padding-left: 15px 
+.footer__email 
+    color: #ffffff 
+    font-family: 'Montserrat', sans-serif 
+    font-size: 16px 
+    font-weight: 500 
+    line-height: 24px 
+    padding: 10px 0 20px 0
+.footer__text 
+    color: #ffffff 
+    font-family: 'Montserrat', sans-serif 
+    font-size: 16px 
+    font-weight: 500 
+.footer__line 
+    content: "" 
+    width: 1.7px 
+    height: 200px 
+    background: #ffffff
+    border-radius: 60px 
+.footer__title 
+    color: #ffffff 
+    font-family: 'Montserrat', sans-serif 
+    font-size: 24px 
+    font-weight: 500 
+    line-height: 36px 
+    padding-bottom: 25px 
+.footer__subtitle 
+    color: #ffffff 
+    font-family: 'Montserrat', sans-serif 
+    font-family: Montserrat 
+    font-size: 16px 
+    font-weight: 400 
+    line-height: 24px 
+    padding-bottom: 25px 
+.footer__prava 
+    color: #ffffff 
+    font-family: 'Montserrat', sans-serif 
+    font-size: 16px 
+    font-weight: 600 
+    line-height: 24px 
+
+
+.page 
+    min-height: 100vh 
+body
+    top: 0 !important 
+    position: static !important 
+.skiptranslate 
+    display: none !important 
+.language__img 
+    background: transparent
+    border: none
+    margin: 2px 
+    cursor: pointer 
+    opacity: .5 
+.language__img:hover,
+.language__img_active 
+    opacity: 1 
+.content 
+    text-align: center 
+    margin: auto 
+.image 
+    width: 127.677px
+    height: 73.752px
+    background-size: cover
+    background-repeat: no-repeat
+.header__lang
+    display: flex
+.header-item-lang-ru
+    margin-right: 20px
+
+
+
+// catalog.html
+.clickIcon
+    padding-top: 120px
+    background: #FADE52
+    &__text
+        color: #1F433F
+        text-align: center
+        font-family: 'Montserrat', sans-serif 
+        font-size: 14px
+        font-weight: 400
+        line-height: 19.629px
+        width: 230px
+        margin: 0 auto
+    &__boxs
+        height: 170px
+        text-align: center
+        display: flex
+        justify-content: space-evenly
+        margin-top: 50px
+        margin-bottom: 0
+        align-items: flex-end
+    &__box
+        cursor: pointer
+        &_img
+            margin-bottom: 20px
+    &__box_line
+        width: 162px
+        height: 0
+        border-radius: 8px
+        background: $main-color
+        transition: all 0.4s
+    &__box_line_active //class active    
+        margin-top: 50px
+        height: 15px
+// .clickIcon__box_line
+//     content: ""
+//     width: 162px
+//     height: 0
+//     border-radius: 8px
+//     background: $main-color
+.clickBtn
+    &__block
+        padding: 50px 0
+        display: none
+        justify-content: space-around
+    &__block_active
+        display: flex
+    &__box
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 250px
+        height: 60px
+        border-radius: 11px
+        background: #EEE
+        color: #000
+        cursor: pointer
+        &_active
+            background: $main-color
+            color: #fff
+        &_text
+            text-align: center
+            font-family: 'Montserrat', sans-serif 
+            font-size: 22px
+            font-weight: 600
+            text-transform: uppercase
+.catalog__content
+    display: none
+    justify-content: space-between
+    flex-wrap: wrap
+    &_active
+        display: flex
+.catalog-item
+    margin-top: 55px
+    width: 265px
+    height: 345px
+    border-radius: 30px
+    background: $main-color
+    &__img
+        border-radius: 30px 30px 0px 0px
+        width: 265px !important
+        height: 242px !important
+    &__text
+        color: #FFF
+        text-align: center
+        font-family: 'Montserrat', sans-serif
+        font-size: 22px
+        font-weight: 600
+        text-transform: uppercase
+        height: 100px
+        display: flex
+        justify-content: center
+        align-items: center
+.video 
+    position: relative
+    padding-bottom: 56.25%
+
+.video__media 
+    width: 100%
+    height: auto
+    
+    position: absolute
+    top: 0px
+    left: 0
+
+.intro 
+    max-height: 100vh
+    overflow: hidden
+
+.clickBtn
+    height: 100%
+    padding-bottom: 140px
+    background: url('../img/main_bg.svg') center center/cover no-repeat
+.main_bg
+    background: url('../img/main_bg.svg') center center/cover no-repeat
+
+.contacts__request
+    box-shadow: 0px 0px 15px 0px #FBDF52
+    margin-top: 200px
+.requestglava
+    background: url('../img/main_bg.svg') center center/cover no-repeat
+    padding: 150px 0 200px 0
+.requestMain
+    &__flex
+        display: flex
+        justify-content: space-between
+    &__rigth
+        width: 800px
+        margin-top: 100px
+    &__title
+        text-align: center
+        color: #000
+        font-family: 'Montserrat', sans-serif
+        font-size: 23px
+        font-weight: 400
+        line-height: 50px /* 217.391% */
+        text-transform: uppercase
+        padding-bottom: 50px
+    &__box
+        position: relative
+        display: flex
+        justify-content: space-between
+        margin-bottom: 35px
+    &__box input, .bootstrap-select
+        display: flex
+        width: 370px !important
+        height: 69px
+        border-radius: 20px
+        border: 1px solid #FBDF52
+        background: #fff
+        padding-left: 30px
+    &__box :-moz-placeholder
+        opacity:  1
+    &__captcha_title
+        color: #000
+        font-family: 'Montserrat', sans-serif
+        font-size: 20px
+        font-weight: 500
+        line-height: 18px /* 90% */
+        letter-spacing: 0.34px
+        text-transform: uppercase
+        margin-bottom: 10px
+    &__captcha_text
+        color: #000
+        font-family: 'Montserrat', sans-serif
+        font-size: 10.313px
+        font-weight: 500
+        line-height: 18px /* 174.545% */
+        letter-spacing: 0.34px
+        text-transform: uppercase
+        margin-bottom: 20px
+    &__button
+        width: 203px
+        height: 70px
+        border-radius: 17px
+        border: none
+        background: $main-color
+        margin-top: 50px
+        color: #fff
+        font-family: 'Montserrat', sans-serif
+        font-size: 20px
+        font-weight: 500
+        line-height: 18px /* 90% */
+        letter-spacing: 0.34px
+        text-transform: uppercase
+    
+::placeholder
+    color: rgba(0, 0, 0, 0.40)
+    font-family: 'Montserrat', sans-serif
+    font-size: 14px
+    font-weight: 500
+    text-transform: uppercase
+    margin-left: 30px
+
+textarea 
+    resize: none
+    width: 795px
+    height: 388px
+    border-radius: 20px
+    border: 1px solid #FBDF52
+    padding: 20px 0 0 20px 
+    margin-bottom: 30px !important
+
+label.error
+    position: absolute
+    top: -25px
+    left: 20px
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus
+    opacity: 1
+    outline: none !important
+.btn
+    width: 420px !important
+    height: 70px !important
+    border: 1px solid #FBDF52 !important
+    border-radius: 20px !important
+.btn-group
+    display: flex !important
+    align-items: center
+    cursor: pointer
+    padding: 0 !important
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default:active.focus, .btn-default:active:focus, .btn-default:active:hover, .open>.dropdown-toggle.btn-default.focus, .open>.dropdown-toggle.btn-default:focus, .open>.dropdown-toggle.btn-default:hover
+    color: #000 !important
+    background-color: #fff !important
+    list-style: none !important
+.btn-default.active, .btn-default:active, .open>.dropdown-toggle.btn-default, .btn-default:hover
+    border: none !important
+    color: #000
+    background-color: #fff !important
+.btn-group.open .dropdown-toggle
+    box-shadow: none !important
+body .bootstrap-select .dropdown-toggle:focus
+    outline: none !important
+
+.dropdown
+    position: relative
+    &__button
+        position: relative
+        display: block
+        text-align: left
+
+        // background: #fff
+        // border: 1px solid #FBDF52
+        // border-radius: 6px
+        // height: 46px
+
+        padding: 25px 35px 13px 20px
+
+        font-weight: 500
+        font-size: 16px
+        line-height: 20px
+
+        cursor: pointer
+
+        width: 370px !important
+        height: 69px
+        color: rgba(0, 0, 0, 0.40)
+        border-radius: 20px
+        border: 1px solid #FBDF52
+        background: #fff
+        padding-left: 30px
+    
+    &__button:focus, &__button--active
+        outline: none
+
+    &__button::after
+        content: ""
+        position: absolute
+        top: 50%
+        right: 15px
+        transform: translateY(-50%)
+
+        width: 370px !important
+        height: 69px
+        // border-radius: 20px
+        // border: 1px solid #FBDF52
+        // background: #fff
+        // padding-left: 30px
+
+        // width: 0
+        // height: 0
+        // border-width: 10.4px 6px 0 6px
+        // border-color: #FBDF52 transparent transparent transparent
+        // border-style: solid
+
+        pointer-events: none
+    &__list
+        display: none
+        
+        position: absolute
+        left: 0
+        top: 68px
+        
+        margin: 0
+        padding: 0
+        list-style-type: none
+
+        background: #fff
+        overflow: hidden
+
+        border-radius: 6px
+        width: 100%
+
+        z-index: 1
+        
+        &-item
+            margin: 0
+            padding: 0
+
+            border: 1px solid #FBDF52
+            border-bottom: 0px
+            padding: 13px 20px
+            cursor: pointer
+        
+        &-item:first-child
+            border-radius: 6px 6px 0 0
+        
+        &-item:last-child
+            border-radius: 0 0 6px 6px 
+            border-bottom: 1px solid #FBDF52
+        
+        &-item:hover
+            background: rgba(220, 220, 5, 0.416) 
+.dropdown__input-hidden
+    display: none
+    overflow: hidden
+    opacity: 0
+    position: absolute
+
+.dropdown__list--visible
+    display: block
+.form-group
+    margin-bottom: 0 !important

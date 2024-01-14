@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/sass/style.css">
+    <link rel="stylesheet" href="//cdn.tutorialjinni.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.tutorialjinni.com/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="//g.tutorialjinni.com/mojoaxel/bootstrap-select-country/dist/css/bootstrap-select-country.min.css" />
+    <link rel="stylesheet" href="assets/css/slick.css">
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <header class="main_for_header">
+        <div class="container_request">
+            <nav class="header__block">
+                <div class="image-box">
+                    <div onclick="window.location.href='index.html'" class="header__logo image"
+                        style="background-image: url('assets/icons/logo.svg');"></div>
+                    <!-- <img class="header__logo image" src="assets/icons/logo.svg" alt=""> -->
+                </div>
+                <ul class="header__menu">
+                    <a href="catalog.html" class="header__navigation lang" key="about" id="up">Каталог</a>
+                    <a href="#" class="header__navigation lang" key="goods">О компании</a>
+                    <a href="#" class="header__navigation lang" key="benefits">Сотрудничество</a>
+                    <a href="#" class="header__navigation lang" key="contact">Контакты</a>
+                </ul>
+                <a class="request" href="request.html">
+                    <div class="request__img">
+                        <img src="assets/icons/request.svg" alt="картинка запрос">
+                    </div>
+                    <div class="request__text lang" key="request">
+                        Оставить запрос
+                    </div>
+                </a>
+                <div class="header__lang">
+                    <div class="request__english language box header-item-lang-ru">
+                        <button data-src='assets/icons/logo.svg' alt="ru" id="ru" data-google-lang="ru"
+                            class="language__img language__img_active btnPer translate">RU</button>
+                        <!-- <img data-src='https://cdn3.iconfinder.com/data/icons/food-set-3/91/Food_C246-256.png' src="assets/icons/En.svg" alt="ru" data-google-lang="ru" class="language__img btn">
+                    <img data-src='https://cdn3.iconfinder.com/data/icons/fruits-8/512/apple-256.png' src="assets/icons/En.svg" alt="en" data-google-lang="en" class="language__img btn"> -->
+                    </div>
+                    <div class="request__english language box header-item-lang-en">
+                        <button data-src='https://cdn3.iconfinder.com/data/icons/fruits-8/512/apple-256.png' alt="en"
+                            id="en" data-google-lang="en" class="language__img btnPer translate">EN</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="requestglava">
+        <section class="requestMain">
+            <div class="container_request requestMain__flex">
+                <div class="contacts__left contacts__request">
+                    <div class="contacts__left_title lang" key="contacts1">наши адреса и контакты</div>
+
+                    <div class="contacts__left_lineText lang" key="contacts2">главный офис</div>
+                    <div class="contacts__left_adress">
+                        <img src="assets/icons/iconsAdress.svg" alt="" class="contacts__left_image">
+                        <div class="contacts__left_text lang" key="contacts3">г. Бишкек Бизнес центр “Аврора”</div>
+                    </div>
+
+                    <div class="contacts__left_lineText lang" key="freezing">заморозка</div>
+                    <div class="contacts__left_adress">
+                        <img src="assets/icons/iconsAdress.svg" alt="" class="contacts__left_image">
+                        <div class="contacts__left_text lang" key="freezing1">Талас с. Кызыл-Адыр ул. Ленина 148
+                        </div>
+                    </div>
+
+                    <div class="contacts__left_lineText lang" key="drying">сушка</div>
+                    <div class="contacts__left_adress">
+                        <img src="assets/icons/iconsAdress.svg" alt="" class="contacts__left_image">
+                        <div class="contacts__left_text lang" key="drying1">г. Бишкек Бизнес центр “Аврора”</div>
+                    </div>
+                    <div class="contacts__left_social">
+                        <a href="">
+                            <img class="contacts__left_socialOne" src="assets/icons/telegram.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="contacts__left_socialTwo" src="assets/icons/whatsapp.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img class="contacts__left_socialThree" src="assets/icons/tel.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- <div class="contacts__left_number"></div> -->
+                    <a class="contacts__left_number" href="tel:+996776999977"
+                        class="header__phone">+(996)776-999-977</a>
+                    <div class="contacts__left_gmail">
+                        <img src="assets/icons/gmail.svg" alt="" class="contacts__left_gmailImg">
+                        <a href="">
+                            <div class="contacts__left_gmailText">sales@product.com</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="requestMain__rigth">
+                    <div class="requestMain__title">напишите нам! оставьте заявку или вопрос</div>
+                    <div class="requestMain__block">
+                        <form id="consultation-form" class="feed-form" action="http://httpbin.org/post" method="POST">
+                            <div class="requestMain__box">
+                                <input name="name" placeholder="Ваше имя" type="text">
+                                <!-- <input name="country" placeholder="Страна"> -->
+                                <select class="selectpicker countrypicker" data-flag="true"></select>
+                            </div>
+                            <div class="requestMain__box">
+                                <input name="phone" placeholder="Ваше E-mail или номер whatsapp" type="text">
+                                <!-- <input name="products" placeholder="Продукция" type="text"> -->
+                                <div class="form-group">
+                                    <div class="dropdown">
+                                        <div class="dropdown__button">Продукция</div>
+                                        <ul class="dropdown__list">
+                                            <li class="dropdown__list-item" data-value="freezing">заморозка</li>
+                                            <li class="dropdown__list-item" data-value="bean">фасоль</li>
+                                            <li class="dropdown__list-item" data-value="dry">сухая</li>
+                                        </ul>
+                                        <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="requestMain__box">
+                                <input name="address" placeholder="Ваше Адрес" type="text">
+                                <input name="volume" placeholder="Объем" type="text">
+                            </div>
+                            <textarea name="messages" placeholder="Ваше сообщение"></textarea>
+
+                            <div class="requestMain__captcha_title">CAPTCHA</div>
+                            <div class="requestMain__captcha_text">Этот вопрос предназначен для проверки того, являетесь ли вы человеком или спам-роботом.</div>
+                            <div class="g-recaptcha" data-sitekey="6LfMVU8pAAAAAGa-xA_aG5_5V12ym1-30uV353Am"></div>
+                            
+                            <button type="submit" class="requestMain__button">Отправить</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+
+    <footer class="footer">
+        <div class="container_request">
+            <div class="footer__boxs">
+                <div class="footer__box">
+                    <div class="footer__contact lang" key="contacts">Контакты</div>
+                    <div class="footer__tel">
+                        <a class="footer__phone" href="+996776999977">+(996)776-999-977</a>
+                        <a href=""><img src="assets/icons/telegram.svg" alt="telegram" class="footer__social"
+                                loading="lazy"></a>
+                        <a href=""><img src="assets/icons/whatsapp.svg" alt="whatsapp" class="footer__social"
+                                loading="lazy"></a>
+                    </div>
+                    <div class="footer__email">sales@product.com</div>
+                    <div class="footer__text lang" key="contactsAdress1">Кыргызская Республика</div>
+                    <div class="footer__text lang" key="contactsAdress2">г. Бишкек</div>
+                    <div class="footer__text lang" key="contactsAdress3">г. Жалал-Абад</div>
+                    <div class="footer__text lang" key="contactsAdress4">г. Ош</div>
+                </div>
+                <div class="footer__line"></div>
+                <div class="footer__box">
+                    <div class="footer__title lang" key="questions">Остались вопросы?</div>
+                    <div class="footer__subtitle lang" key="questions1">Не нашли что искали? Свяжитесь с нами и наши
+                        менеджеры ответят на любой ваш вопрос</div>
+                    <div class="footer__prava lang" key="questions2">© productkg.com Все права защищены</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+
+
+    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/l10n/de.umd.js"></script>
+    <script src="assets/js/fancybox.umd.js"></script> -->
+    <script src="assets/js/slick.min.js"></script>
+    <!-- <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script> -->
+
+    <!-- <script src="//cdn.tutorialjinni.com/jquery/3.6.1/jquery.min.js"></script> -->
+    <script src="//cdn.tutorialjinni.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdn.tutorialjinni.com/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <script src="//g.tutorialjinni.com/mojoaxel/bootstrap-select-country/dist/js/bootstrap-select-country.min.js"></script>
+    
+    
+    <script src="assets/js/script.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/request.js"></script>
+</body>
+</html>
